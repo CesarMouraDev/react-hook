@@ -12,17 +12,17 @@
                     if (prevSegundos + 1 === 60) {
                         setMinutos((prevMinutos) => prevMinutos + 1); 
                         return 0; 
-                    }
+                    };
                     return prevSegundos + 1; 
                 });
-            }, 50);
+            }, 5);
             return () => clearInterval(intervalId)
         }, []);
     //limpeza de estado
 
 
         return <div>
-            <h2>Timer: {minutos} minuto{minutos !== 1 ? 's' : ''}, {segundos} segundo{segundos !== 1 ? 's' : ''}</h2>
+            <h2>Timer {minutos} minutos, {segundos} segundos</h2>
             
         </div>;
     };

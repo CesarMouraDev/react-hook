@@ -5,7 +5,7 @@
         const [segundos, setSegundos] = useState(0);
         const [minutos, setMinutos] = useState(0);
 
-        //setInterval, setTimeout
+        //setInterval
         useEffect(() => {
             const intervalId = setInterval(() => {
                 setSegundos((prevSegundos) => {
